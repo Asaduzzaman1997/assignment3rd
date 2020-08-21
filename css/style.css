@@ -1,0 +1,670 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:300,400,500,600,700');
+
+/* =================================================
+             -----Google Fonts End -----
+    ================================================= */
+*{
+	margin: 0px;
+	padding: 0px;
+	outline: 0px;
+}
+
+ul,ol{
+	list-style: none;
+}
+a,a:hover{
+	text-decoration: none;
+}
+img{
+	border:none;
+	vertical-align: middle;
+}
+ h1,h2,h3,h4,h5,h6,a,p,ol,ul,li,img,.navbar{
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ body{
+    font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	
+ }
+ /* =================================================
+              ------Common CSS end-----
+    ================================================= */
+#navbarSupportedContent{
+	margin-left: -16px;
+	margin-top: 10px;
+}
+
+.main-menu{
+	padding: 23px;
+	background: #fff;
+}
+.main-menu .nav-item .nav-link{
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	color: #0e1424;
+	padding-left: 16px;
+
+}
+.main-menu .nav-item.active .nav-link,
+.main-menu .nav-item .nav-link:focus, 
+.main-menu .nav-item .nav-link:hover{
+	color:#31d7ce;
+}
+.banner-part{
+	background: url('../images/banner.png') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.banner-part .bn-overlay{
+	background: rgba(14, 17, 22, .5);
+	padding: 322px 0px;
+
+}
+.banner-part .bn-overlay h1{
+	color:#31d7ce;
+	font-family: 'Poppins', sans-serif;
+	font-size: 70px;
+	font-weight: bold;
+	letter-spacing: 19px;
+	padding-bottom: 41px;
+
+}
+.banner-part .bn-overlay a{
+	font-family: 'Poppins', sans-serif;
+	font-width: 500;
+	font-size: 14px;
+	color:#31d7ce;
+	padding: 18px 36px;
+	border: 2px solid #d1d1d1;
+	border-radius: 30px; 
+	transition: all linear .3s;
+}
+.banner-part .bn-overlay a:hover{
+	background: #31d7ce;
+	color: #f1f1f1;
+	transition: all linear .3s;
+	border: 2px solid #31d7ce;
+	/*border: none; */
+}
+/* =================================================
+              ------Menu And Banner CSS end-----
+    ================================================= */
+
+#about{
+	padding-bottom: 152px;
+}
+#about .image img{
+	padding-top: 150px;
+}
+#about .text{
+	padding-left: 20px;
+}
+#about .text h2{
+	font-weight: 600;
+	font-size: 30px;
+	font-family: 'Poppins', sans-serif;
+	padding-top: 180px;
+	padding-bottom: 18px;
+
+}
+
+#about .text p{
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 32px;
+}
+#about .text a{
+	padding: 12px 24px;
+	color: #fff;
+	background: #0dac88;
+	border-radius: 30px;
+	transition: all linear .3s;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+}
+#about .text a:hover{
+	color:#f6e58d;
+	
+}
+/* =================================================
+              ------Section CSS end-----
+    ================================================= */
+.service-part .ms{
+	padding-bottom: 30px;
+	font-size: 40px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #252525;
+}
+.service-part .media img{
+	padding: 21px;
+	background: #24ddb3;
+	border-radius: 12px;
+}
+.service-part .service-item{
+	padding: 50px 35px;
+	transition: all linear .3s;
+}
+.service-part .service-item:hover{
+  box-shadow: 0px 0px 6px #31d7ce;
+}
+.service-part .media-body h5{
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #444444;
+  padding: 10px 0px;
+}
+.service-part .media-body p{
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  line-height: 20px;
+} 
+.service-part{
+	padding-bottom: 50px;
+}
+/* =================================================
+              ------Service CSS end-----
+    ================================================= */
+.portfolio{
+	padding-bottom: 130px;
+}
+.portfolio .hd{
+	padding-bottom: 60px;
+	font-size:40px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+}
+.portfolio .port-item{
+	position: relative;
+	margin-bottom: 20px;
+}
+.portfolio .port-overlay{
+	position: absolute;
+	height: 0%;
+	width: 100%;
+	background: rgba(0,0,0, .35);
+	position: absolute;
+	top:0;
+	left:0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: all linear 0.3s;
+}	
+.portfolio .port-overlay a{
+  color: #fff;
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+
+}
+.portfolio .port-item:hover .port-overlay{
+  opacity: 1;
+  height: 100%;
+}
+/* =================================================
+              ------Portfolio CSS end-----
+    ================================================= */
+.reaward{
+	background:url('../images/bg.png') no-repeat;
+    padding: 43px 0px;
+    padding-bottom: 150px;
+}
+
+.reaward .r-item .ig{
+	display: block;
+	margin: 0 auto;
+}
+.reaward .r-item h2{
+	font-size: 30px;
+	font-family: 'Poppins', sans-serif;
+	width: 600;
+	color: #ffffff;
+	margin-top: 18px;
+}
+.reaward .r-item h5{
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+	width: 500;
+	color: #d4d4d4;
+	margin-top: 18px;
+}
+/* =================================================
+              ------Reaward CSS end-----
+    ================================================= */
+.blog .blog-part{
+	padding-bottom: 150px;
+}
+.blog h1{
+	padding-bottom: 40px;
+	font-size: 40px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+
+}
+.blog .blog-part h3{
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+    padding:30px 0px 26px;
+    color: #333;
+}
+.blog .blog-part p{
+	font-family: 'Open Sans', sans-serif;
+	color: #666;
+	font-size: 15px;
+	padding-bottom: 28px;
+}
+.blog .blog-part h4{
+	font-size: 13px;
+	color: #555;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+}
+/* =================================================
+              ------Blog CSS end-----
+    ================================================= */
+.contact{
+	padding: 70px 0px;
+	background: #50d18d;
+}
+.contact .con-main h3{
+	font-size: 25px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	margin-right: 14px; 
+}
+.contact .con-main a{
+	font-size: 13px;
+	padding: 20px 34px;
+	background: #4be694;
+	border-radius: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: white;
+	transition: all linear .3s;
+}
+
+.contact .con-main a:hover{
+	color:yellow;
+}
+/* =================================================
+              ------Contact CSS end-----
+    ================================================= */
+.footer{
+	padding: 85px 0px 35px;
+	background: #000415;
+}
+.footer .first{
+	border-right: 1px solid #707073;
+	padding: 50px 0px 60px;
+}
+.footer .first img{
+	margin-right: 140px;
+	padding-bottom: 20px;
+}
+.footer .first h3{
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	color:white;
+	font-weight: 400;
+}
+.footer .secoend{
+	padding:26px 0px 34px;
+} 
+.footer .secoend img{
+	padding-right: 26px;
+	margin-top: 6px;
+}
+.footer .secoend p{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	line-height: 24px;
+}
+.footer .secoend .fr{
+	padding-bottom: 28px;
+}
+.footer .f-last h3{
+	color: #818181;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	margin-top: 50px;
+}
+/* =================================================
+              ------Footer CSS end-----
+    ================================================= */
+
+/* =================================================
+              ------Responsive CSS Start-----
+    ================================================= */
+@media (max-width: 576px) {
+	.banner-part .bn-overlay h1{
+		font-size: 35px;
+	}
+	.footer .first img{
+		padding-left: 140px;
+	}
+	.footer .secoend{
+		padding-left: 95px;
+	}
+	.reaward{
+		background:none;
+	}
+	.reaward .one{
+		padding: 43px 0px;
+		background:url('../images/bg.png') no-repeat;
+	}
+	.reaward .two{
+		padding: 43px 0px;
+		background:url('../images/bg.png') no-repeat;
+	}
+	.reaward .three{
+		padding: 43px 0px;
+		background:url('../images/bg.png') no-repeat;
+	}
+}
+@media (max-width: 375px) {
+	.banner-part .bn-overlay h1{
+		font-size: 20px;
+	}
+	.footer .first img{
+		padding-left: 120px;
+	}
+	.footer .secoend{
+		padding-left: 20px;
+	}
+	.reaward{
+		background:none;
+	}
+	.reaward .one{
+		padding: 43px 0px;
+		background:url('../images/bg.png') no-repeat;
+	}
+	.reaward .two{
+		padding: 43px 0px;
+		background:url('../images/bg.png') no-repeat;
+	}
+	.reaward .three{
+		padding: 43px 0px;
+		background:url('../images/bg.png') no-repeat;
+	}
+}
+/* =================================================
+              ------preloader css start-----
+    ================================================= */
+#loading .loading1{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background: #2f3542;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	animation: mymoveone .8s infinite;
+  	position: fixed;
+  	z-index: 99;
+}
+#loading .loading1 .loading2{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background: #747d8c;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	animation: mymovetwo .8s infinite;
+}
+#loading .loading1 .loading3{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background:  #ffffff;
+	position: absolute;
+  	top: 50%;
+	left: 50%;
+  transform: translate(-50%, -50%);
+  animation: mymovethree .8s infinite;
+}
+@keyframes mymovethree {
+  0%   {
+	opacity: .0;
+  }
+  10%  {
+	height: 104px;
+	width: 104px;
+	opacity: .1;
+  }
+  20%  {
+	height: 108px;
+	width: 108px;
+	opacity: .2;
+  }
+  30%  {
+	height: 112px;
+	width: 112px;
+	opacity: .3;
+  }
+  40%  {
+	height: 116px;
+	width: 116px;
+	opacity: .4;
+  }
+  50%  {
+	height: 120px;
+	width: 120px;
+	opacity: .5;
+  }
+  60% {
+	height: 124px;
+	width: 124px;
+	opacity: .6;
+  }
+   70% {
+	height: 128px;
+	width: 128px;
+	opacity: .7;
+  }
+  80% {
+	height: 132px;
+	width: 132px;
+	opacity: .8;
+  }
+   90% {
+	height: 136px;
+	width: 136px;
+	opacity: .9;
+  }
+   100% {
+	height: 140px;
+	width: 140px;
+	opacity: 1;
+  }
+}
+@keyframes mymovetwo {
+  0%   {
+	opacity: .0;
+  }
+  10%  {
+	height: 154px;
+	width: 154px;
+	opacity: .1;
+  }
+  20%  {
+	height: 158px;
+	width: 158px;
+	opacity: .2;
+  }
+  30%  {
+	height: 162px;
+	width: 162px;
+	opacity: .3;
+  }
+  40%  {
+	height: 166px;
+	width: 166px;
+	opacity: .4;
+  }
+  50%  {
+	height: 170px;
+	width: 170px;
+	opacity: .5;
+  }
+  60% {
+	height: 174px;
+	width: 174px;
+	opacity: .6;
+  }
+   70% {
+	height: 178px;
+	width: 178px;
+	opacity: .7;
+  }
+  80% {
+	height: 182px;
+	width: 182px;
+	opacity: .8;
+  }
+   90% {
+	height: 186px;
+	width: 186px;
+	opacity: .9;
+  }
+   100% {
+	height: 190px;
+	width: 190px;
+	opacity: 1;
+  }
+}
+@keyframes mymoveone {
+  0%   {
+	opacity: .0;
+  }
+  10%  {
+	height: 204px;
+	width: 204px;
+	opacity: .1;
+  }
+  20%  {
+	height: 208px;
+	width: 208px;
+	opacity: .2;
+  }
+  30%  {
+	height: 212px;
+	width: 212px;
+	opacity: .3;
+  }
+  40%  {
+	height: 216px;
+	width: 216px;
+	opacity: .4;
+  }
+  50%  {
+	height: 220px;
+	width: 220px;
+	opacity: .5;
+  }
+  60% {
+	height: 224px;
+	width: 224px;
+	opacity: .6;
+  }
+   70% {
+	height: 228px;
+	width: 228px;
+	opacity: .7;
+  }
+  80% {
+	height: 232px;
+	width: 232px;
+	opacity: .8;
+  }
+   90% {
+	height: 236px;
+	width: 236px;
+	opacity: .9;
+  }
+   100% {
+	height: 240px;
+	width: 240px;
+	opacity: 1;
+  }
+}
+/*preloader css end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
